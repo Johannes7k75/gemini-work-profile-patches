@@ -48,8 +48,54 @@ clone has to be uninstalled first and you have to sign in again.
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
+> **[v1.0.0](https://github.com/Johannes7k75/gemini-work-profile-patches/releases/tag/v1.0.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;7 patches total
+<details open>
+<summary>📦 Google&nbsp;&nbsp;•&nbsp;&nbsp;5 patches</summary>
+<br>
 
-#### A list of the patches will automatically be shown here after the first release.
+**Package name:** `com.google.android.googlequicksearchbox`
+
+**🎯 Supported versions:**
+
+| 17.72.17.ve.arm64 | 17.70.11.ve.arm64 |
+| :---: | :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Allow work profile](#allow-work-profile) | Lets Gemini run in a work profile (Shelter, Island, Secure Folder) instead of asking to use the personal profile (errors 19 and 900009) or opening the web app. |  |
+| [Request microG permissions](#request-microg-permissions) | Asks for account access and microG extended access when Gemini starts, so signing in works without granting them manually. |  |
+| [Skip uncertified device warning](#skip-uncertified-device-warning) | Skips the local "device is not Play Protect certified" screen that the bundled Google Play services client shows with microG. Does not change any device or server certification state. |  |
+| [Unlock update-required chats](#unlock-update-required-chats) | Keeps the input field and hides the "Update required for this conversation" card ("App aktualisieren") that the server shows for some chats. The patched app cannot be updated from the Play Store, so this card would otherwise block these chats for good. |  |
+| [microG support](#microg-support) | Installs the Google app as a separate clone that signs in with microG (app.revanced.android.gms) instead of Google Play services. microG must be installed in the same profile. |  |
+
+</details>
+
+<details open>
+<summary>📦 Gemini&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
+<br>
+
+**Package name:** `com.google.android.apps.bard`
+
+**🎯 Supported versions:**
+
+| 1.0.995038376 |
+| :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Open cloned Google app](#open-cloned-google-app) | Installs Gemini as a separate clone that opens the patched Google app (patch the Google app with this bundle too). |  |
+
+</details>
+
+<details open>
+<summary>🌐 Universal&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
+<br>
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Hide launcher icon](#hide-launcher-icon) | Removes the app's icon(s) from the launcher. Useful for the cloned Google app, which is only opened through Gemini. |  |
+
+</details>
 
 <!-- PATCHES_END -->
 
